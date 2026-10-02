@@ -15,23 +15,26 @@
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
+  <!-- TOP BAR -->
   <div class="bg-white border-b border-gray-200 py-1.5 px-4 text-xs flex justify-between items-center text-gray-600">
-    <div><strong>ACADEMIC & PROFESSIONAL PORTFOLIO</strong> | Verified Engineering Dossier</div>
+    <div><strong>VERIFIED ENGINEERING PORTFOLIO</strong> | Academic & Industrial Dossier</div>
     <div class="text-[#4161eb] font-semibold flex items-center">
       <i class="fa fa-id-card mr-1.5"></i> PEC Reg: CHEM/025240 (Valid Thru 2027)
     </div>
   </div>
 
+  <!-- NAVIGATION BAR (Exact Royal Blue Header) -->
   <header class="bg-[#4161eb] sticky top-0 z-50 shadow-md">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-14">
-        <div class="flex items-center space-x-2 sm:space-x-4 overflow-x-auto py-2 text-xs sm:text-sm text-white font-medium">
+        <div class="flex items-center space-x-1 sm:space-x-3 overflow-x-auto py-2 text-xs sm:text-sm text-white font-medium">
           <button onclick="switchTab('about')" id="btn-about" class="nav-btn nav-active px-3 py-1.5 whitespace-nowrap hover:text-blue-100 transition">About</button>
           <button onclick="switchTab('research')" id="btn-research" class="nav-btn px-3 py-1.5 whitespace-nowrap hover:text-blue-100 transition">Research Experience</button>
           <button onclick="switchTab('industrial')" id="btn-industrial" class="nav-btn px-3 py-1.5 whitespace-nowrap hover:text-blue-100 transition">Industrial Experience</button>
           <button onclick="switchTab('certifications')" id="btn-certifications" class="nav-btn px-3 py-1.5 whitespace-nowrap hover:text-blue-100 transition">Certifications</button>
           <button onclick="switchTab('awards')" id="btn-awards" class="nav-btn px-3 py-1.5 whitespace-nowrap hover:text-blue-100 transition">Awards</button>
           <button onclick="switchTab('volunteering')" id="btn-volunteering" class="nav-btn px-3 py-1.5 whitespace-nowrap hover:text-blue-100 transition">Volunteering</button>
+          <button onclick="switchTab('gallery')" id="btn-gallery" class="nav-btn px-3 py-1.5 whitespace-nowrap hover:text-blue-100 transition">Plant Gallery</button>
           <button onclick="switchTab('contact')" id="btn-contact" class="nav-btn px-3 py-1.5 whitespace-nowrap hover:text-blue-100 transition">Contact</button>
         </div>
       </div>
@@ -40,77 +43,81 @@
 
   <main class="flex-grow">
 
-    <!-- ABOUT TAB -->
+    <!-- 1. ABOUT TAB -->
     <div id="tab-about" class="tab-content block">
       <section class="bg-[#121e3a] text-white py-16 px-4 sm:px-8 relative">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div class="md:col-span-2 space-y-4">
             <p class="text-xs uppercase tracking-widest text-blue-300 font-semibold">Chemical & Process Safety Engineer</p>
             <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Engr. Muhammad Jahanzaib Iqbal</h1>
-            <p class="text-base sm:text-lg text-gray-300 italic">Specializing in Thermochemical Syngas & Methanol Synthesis, Carbon Capture (CCUS), Aspen Plus Flowsheet Simulation, and Quantitative Industrial Risk Engineering.</p>
+            <p class="text-base sm:text-lg text-gray-300 italic">Specializing in Thermochemical Syngas & Methanol Synthesis, Carbon Capture (CCUS), Aspen Plus Simulation, and Industrial Process Safety (HAZOP/ALOHA).</p>
             <div class="pt-2 flex flex-wrap gap-2 text-xs">
               <span class="bg-blue-900/60 border border-blue-400/30 px-3 py-1 rounded">PEC: CHEM/025240</span>
               <span class="bg-blue-900/60 border border-blue-400/30 px-3 py-1 rounded">NEBOSH IGC Certified</span>
               <span class="bg-blue-900/60 border border-blue-400/30 px-3 py-1 rounded">IOSH Managing Safely</span>
-              <span class="bg-blue-900/60 border border-blue-400/30 px-3 py-1 rounded">UET Lahore (CGPA 3.364)</span>
+              <span class="bg-blue-900/60 border border-blue-400/30 px-3 py-1 rounded">UET Lahore (CGPA: 3.364)</span>
             </div>
           </div>
+
+          <!-- Hero Profile Card with Real Photo -->
           <div class="bg-white text-gray-900 p-6 rounded-lg shadow-xl text-center border-t-4 border-[#4161eb]">
-            <div class="w-32 h-32 mx-auto rounded-full bg-slate-100 border-2 border-[#4161eb] flex items-center justify-center text-4xl text-[#4161eb] font-serif font-bold shadow-inner mb-4">
-              JI
+            <div class="w-36 h-36 mx-auto rounded-full bg-slate-100 border-2 border-[#4161eb] mb-4 overflow-hidden shadow-md flex items-center justify-center">
+              <img src="Jahanzaib pic.jpeg" alt="Engr. Muhammad Jahanzaib Iqbal" class="w-full h-full object-cover" onerror="this.src='https://ui-avatars.com/api/?name=Jahanzaib+Iqbal&background=4161eb&color=fff&size=200'">
             </div>
             <h3 class="font-bold text-lg text-gray-800">M. Jahanzaib Iqbal</h3>
-            <p class="text-xs text-blue-600 font-semibold mb-2">Process & Safety Specialist</p>
+            <p class="text-xs text-blue-600 font-semibold mb-2">Process & Plant Safety Specialist</p>
             <div class="space-y-1.5 text-xs text-left text-gray-600 mb-6 bg-gray-50 p-3 rounded">
               <p><i class="fa fa-envelope text-[#4161eb] mr-2"></i> mjahanzaib.inbox@gmail.com</p>
               <p><i class="fa fa-phone text-[#4161eb] mr-2"></i> (+92) 308 8617661</p>
               <p><i class="fa fa-check-circle text-green-600 mr-2"></i> PEC Licensed (Valid 2027)</p>
             </div>
-            <button onclick="switchTab('contact')" class="w-full py-2 bg-[#4161eb] hover:bg-blue-700 text-white rounded font-medium text-xs tracking-wider uppercase transition">Contact & Inquiries</button>
+            <button onclick="switchTab('contact')" class="w-full py-2 bg-[#4161eb] hover:bg-blue-700 text-white rounded font-medium text-xs tracking-wider uppercase transition">Contact & Direct Inquiries</button>
           </div>
         </div>
       </section>
 
+      <!-- Biography -->
       <section class="max-w-5xl mx-auto py-12 px-4">
         <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">MY BACKGROUND</h2>
         <div class="prose text-gray-700 text-sm leading-relaxed space-y-4">
           <p>
-            I am a Pakistan Engineering Council (PEC)-registered Chemical Engineer (CHEM/025240) graduated from the University of Engineering and Technology (UET) Lahore with an official CGPA of 3.364 / 4.00, supported by the Higher Education Commission (HEC) Merit Scholarship. My academic and industrial career bridges high-rigor thermodynamic process modeling with frontline hydrocarbon gas processing and continuous chemical manufacturing.
+            I am a Pakistan Engineering Council (PEC)-registered Chemical Engineer (CHEM/025240) from the University of Engineering and Technology (UET) Lahore, where I graduated with an official CGPA of 3.364 / 4.00, supported by the Higher Education Commission (HEC) Merit Scholarship. My academic and industrial career bridges high-rigor thermodynamic process modeling with frontline hydrocarbon gas processing and continuous chemical plant manufacturing.
           </p>
           <p>
-            My operational competencies were refined through engineering rotations at Oil & Gas Development Company Limited (OGDCL) Dakhni Gas Processing Plant—monitoring high-pressure MDEA sour gas sweetening, Claus sulfur recovery, and TEG dehydration—and at Pakarab Fertilizers Limited (Fatima Group), auditing continuous 700 MT/day Calcium Ammonium Nitrate (CAN) reactors, falling film vacuum evaporators, and prilling tower air dynamics. In full-time capacities as Production Executive at Evyol Group and HSE Officer at Indus Sugar Mills, I directed Permit-to-Work (PTW) frameworks, Process Safety Management (PSM), and plant PFD audits.
+            My industrial competencies were refined through engineering rotations at Oil & Gas Development Company Limited (OGDCL) Dakhni Gas Processing Plant—monitoring high-pressure MDEA sour gas sweetening, Claus sulfur recovery, and TEG dehydration—and at Pakarab Fertilizers Limited (Fatima Group), auditing continuous 700 MT/day Calcium Ammonium Nitrate (CAN) reactors, falling film vacuum evaporators, and prilling tower air dynamics. In full-time capacities as Production Executive at Evyol Group and HSE Officer at Indus Sugar Mills, I directed Permit-to-Work (PTW) frameworks, Process Safety Management (PSM), and plant PFD audits.
           </p>
           <p>
             Holding dual international UK safety credentials—NEBOSH IGC (SQA Ref: R630 04) and IOSH Managing Safely—I focus on the intersection of inherently safe design, syngas optimization, and circular decarbonization. My primary research includes fluidized bed RDF gasification to commercial methanol (70,080 MTPY), hydrometallurgical mineral carbonation for CCUS (91.51% Mg recovery from lizardite), and sustainable leather waste biocomposites.
           </p>
         </div>
 
+        <!-- 2-Column Split: Education vs Experience -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 pt-8 border-t border-gray-200">
           <div>
             <h3 class="text-lg font-bold text-[#4161eb] mb-4 flex items-center"><i class="fa fa-graduation-cap mr-2"></i> Verified Education</h3>
             <div class="border-l-2 border-blue-200 pl-4 space-y-4 text-xs">
               <div>
                 <span class="text-blue-600 font-bold uppercase">2021 – 2025</span>
-                <h4 class="font-bold text-sm text-gray-800">B.Sc. in Chemical Engineering</h4>
+                <h4 class="font-bold text-sm text-gray-800">Bachelor of Science in Chemical Engineering</h4>
                 <p class="text-gray-600">University of Engineering and Technology (UET) Lahore</p>
                 <p class="text-gray-500">Degree No: 2307510 | CGPA: 3.364 / 4.00 | Attested by HEC & MOFA</p>
               </div>
               <div>
                 <span class="text-blue-600 font-bold uppercase">2019 – 2021</span>
-                <h4 class="font-bold text-sm text-gray-800">F.Sc Pre-Engineering</h4>
+                <h4 class="font-bold text-sm text-gray-800">F.Sc Pre-Engineering (Higher Secondary)</h4>
                 <p class="text-gray-600">City College of Science and Commerce, Multan (BISE Multan)</p>
                 <p class="text-gray-500">Certificate INT 752813 | Roll 544235 | 960 / 1100 (Grade A+ Distinction)</p>
               </div>
             </div>
           </div>
           <div>
-            <h3 class="text-lg font-bold text-[#4161eb] mb-4 flex items-center"><i class="fa fa-industry mr-2"></i> Industrial Operations</h3>
+            <h3 class="text-lg font-bold text-[#4161eb] mb-4 flex items-center"><i class="fa fa-industry mr-2"></i> Verified Plant Operations</h3>
             <div class="border-l-2 border-blue-200 pl-4 space-y-4 text-xs">
               <div>
                 <span class="text-blue-600 font-bold uppercase">Jun 2024 – Jul 2024</span>
                 <h4 class="font-bold text-sm text-gray-800">Process Engineering Intern</h4>
                 <p class="text-gray-600">OGDCL Dakhni Gas Processing Plant (Ref: HRO/P&P/24530/2024)</p>
-                <p class="text-gray-500">MDEA sweetening, Claus sulfur recovery, TEG contactors, and SCADA console telemetry.</p>
+                <p class="text-gray-500">MDEA gas sweetening, Claus SRU, TEG contactors, and SCADA telemetry.</p>
               </div>
               <div>
                 <span class="text-blue-600 font-bold uppercase">Jun 2023 – Jul 2023</span>
@@ -124,26 +131,32 @@
       </section>
     </div>
 
-    <!-- RESEARCH TAB -->
+    <!-- 2. RESEARCH EXPERIENCE TAB -->
     <div id="tab-research" class="tab-content hidden">
       <section class="max-w-5xl mx-auto py-12 px-4">
         <h2 class="text-2xl font-bold text-gray-900 mb-2">RESEARCH EXPERIENCE & DESIGN CAPSTONES</h2>
         <p class="text-xs text-gray-500 mb-8 uppercase tracking-widest">Grounded in UET Official Coursework & Experimental Laboratory Investigations</p>
 
         <div class="space-y-6">
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">Ch.E-461 & 462: Grade A (4.0 GP)</span>
-            <h3 class="text-base font-bold text-[#4161eb] mt-2">1. Utilization of Chrome-Tanned Leather Shavings for Sustainable Biocomposites</h3>
-            <p class="text-xs text-gray-600 mb-2"><strong>Authors:</strong> M. J. Iqbal (Lead), H. Ashraf, T. Rehman, M. H. Ali, Prof. Dr. Hamayoun Mahmood (Supervisor)</p>
-            <p class="text-xs text-gray-700 leading-relaxed mb-3">
-              Alkaline dechroming (0.5M NaOH) pre-treatment on hazardous tannery shavings to eliminate carcinogenic Cr(VI) transformation. Compounded fibers with wood dust and urea-formaldehyde resin under hydraulic compression at 180 °C and 200 psi for 7 min. UTM characterization proved 10% CTLS formulation achieved optimal flexural properties (MOR: 15.42 N/mm², MOE: 1081.2 N/mm²), while cutting 24-hr thickness swelling to 2.62% (vs 21.6% in control wood). TGA analysis confirmed degradation onset at 344 °C.
-            </p>
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm flex flex-col md:flex-row gap-6">
+            <div class="md:w-1/3 flex-shrink-0">
+              <img src="Snapchat-791951151.jpg" alt="Lab Research" class="w-full h-48 object-cover rounded border border-gray-200" onerror="this.style.display='none'">
+              <p class="text-[10px] text-gray-400 text-center mt-1">UET Materials Characterization Lab</p>
+            </div>
+            <div class="md:w-2/3">
+              <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">Ch.E-461 & 462: Grade A (4.0 GP)</span>
+              <h3 class="text-base font-bold text-[#4161eb] mt-2">1. Utilization of Chrome-Tanned Leather Shavings for Sustainable Biocomposites</h3>
+              <p class="text-xs text-gray-600 mb-2"><strong>Authors:</strong> <u>M. J. Iqbal</u>, H. Ashraf, T. Rehman, M. H. Ali, Prof. Dr. Hamayoun Mahmood (Supervisor)</p>
+              <p class="text-xs text-gray-700 leading-relaxed mb-3">
+                Alkaline dechroming (0.5M NaOH) pre-treatment on hazardous tannery shavings to eliminate carcinogenic Cr(VI) transformation. Compounded fibers with wood dust and urea-formaldehyde resin under hydraulic compression at 180 °C and 200 psi for 7 min. UTM characterization proved 10% CTLS formulation achieved optimal flexural properties (MOR: 15.42 N/mm², MOE: 1081.2 N/mm²), while cutting 24-hr thickness swelling to 2.62% (vs 21.6% in control wood). TGA analysis confirmed degradation onset at 344 °C.
+              </p>
+            </div>
           </div>
 
           <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
             <span class="text-xs bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded">Ch.E-315L: Process Modeling (Grade A)</span>
             <h3 class="text-base font-bold text-[#4161eb] mt-2">2. Sustainable Methanol Synthesis from Refuse-Derived Fuel (RDF) via Gasification</h3>
-            <p class="text-xs text-gray-600 mb-2"><strong>Authors:</strong> M. J. Iqbal (Lead), H. Ashraf, T. Rehman, Design Cohort</p>
+            <p class="text-xs text-gray-600 mb-2"><strong>Authors:</strong> <u>M. J. Iqbal</u> (Lead), H. Ashraf, T. Rehman, Design Cohort</p>
             <p class="text-xs text-gray-700 leading-relaxed mb-3">
               Synthesized an industrial plant processing 8,000 kg/hr of solid waste RDF. Modeled a fluidized bed gasifier operating at 1600 °C and 1.2 bar in Aspen Plus, achieving 94% mass reduction (ash output 435 kg/hr) and 95% particulate cyclone separation. Integrated heat recovery steam generators, catalytic water-gas shift syngas tuning (H2:CO ratio = 2.05), packed-bed catalytic synthesis, and distillation to produce 70,080 MTPY of commercial >99.85 wt% methanol.
             </p>
@@ -152,131 +165,206 @@
           <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
             <span class="text-xs bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded">Ch.E-409 & 313: Chemical Equipment Design</span>
             <h3 class="text-base font-bold text-[#4161eb] mt-2">3. Process Simulation and Economic Evaluation of 700 MT/Day CAN Plant</h3>
-            <p class="text-xs text-gray-600 mb-2"><strong>Authors:</strong> M. J. Iqbal, H. Ashraf, A. Raza, Dr. A.N. Tabish (Supervisor)</p>
+            <p class="text-xs text-gray-600 mb-2"><strong>Authors:</strong> <u>M. J. Iqbal</u>, H. Ashraf, A. Raza, Dr. A.N. Tabish (Supervisor)</p>
             <p class="text-xs text-gray-700 leading-relaxed mb-3">
-              Modeled the highly exothermic direct neutralization of 60 wt% HNO₃ with vaporized NH₃ in Aspen Plus using the NRTL fluid package. Sized the kinetic CSTR (122 °C, 4.05 bar), TEMA BEM shell-and-tube coolers, 20-stage ammonia recovery column, and vacuum evaporation train. Conducted APEA economic modeling establishing $35.18M equipment cost, $31.46M capital expenditure, and $8.72M/year OPEX.
+              Modeled the highly exothermic direct neutralization of 60 wt% HNO₃ with vaporized NH₃ in Aspen Plus using the NRTL fluid package. Rated the kinetic CSTR (122 °C, 4.05 bar), TEMA BEM shell-and-tube coolers, 20-stage ammonia recovery column, and vacuum evaporation train. Conducted APEA economic modeling establishing $35.18M equipment cost, $31.46M capital expenditure, and $8.72M/year OPEX.
             </p>
           </div>
         </div>
       </section>
     </div>
 
-    <!-- INDUSTRIAL TAB -->
+    <!-- 3. INDUSTRIAL EXPERIENCE TAB -->
     <div id="tab-industrial" class="tab-content hidden">
       <section class="max-w-5xl mx-auto py-12 px-4">
         <h2 class="text-2xl font-bold text-gray-900 mb-2">INDUSTRIAL EXPERIENCE & PLANT OPERATIONS</h2>
         <p class="text-xs text-gray-500 mb-8 uppercase tracking-widest">Documented Industrial Facility Operations Backed by Official Institutional Letters</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <span class="text-xs font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Ref: HRO/P&P/24530/2024</span>
-            <h3 class="text-base font-bold text-[#4161eb] mt-2">OGDCL Dakhni Gas Processing Plant</h3>
-            <p class="text-xs text-gray-500 mb-3">Process Engineering Intern | Attock, Punjab [Jun 2024 – Jul 2024]</p>
-            <p class="text-xs text-gray-700 leading-relaxed">
-              Assigned to the Process & Plants Department. Monitored MDEA high-pressure sour gas sweetening columns, solvent regeneration loops, Claus sulfur recovery furnaces, and TEG dehydration skids. Evaluated DCS/SCADA console telemetry, column differential pressures, and plant emergency shutdown (ESD) logic.
-            </p>
+          <!-- OGDCL Entry -->
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Ref: HRO/P&P/24530/2024</span>
+              <h3 class="text-base font-bold text-[#4161eb] mt-2">OGDCL Dakhni Gas Processing Plant</h3>
+              <p class="text-xs text-gray-500 mb-3">Process Engineering Intern | Attock, Punjab [Jun 2024 – Jul 2024]</p>
+              <div class="mb-4 overflow-hidden rounded border border-gray-200">
+                <img src="Letter of OGDCL.jpg" alt="OGDCL Letter" class="w-full h-44 object-cover object-top hover:scale-105 transition" onerror="this.style.display='none'">
+              </div>
+              <p class="text-xs text-gray-700 leading-relaxed">
+                Assigned to the Process & Plants Department. Monitored MDEA high-pressure sour gas sweetening columns, solvent regeneration loops, Claus sulfur recovery furnaces, and TEG dehydration skids. Evaluated DCS/SCADA console telemetry, column differential pressures, and plant emergency shutdown (ESD) logic.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+              <span class="text-gray-500"><i class="fa fa-file-alt mr-1 text-[#4161eb]"></i> Official Letter Attached</span>
+              <a href="Letter of OGDCL.jpg" target="_blank" class="text-[#4161eb] font-bold hover:underline">View Full Letter &rarr;</a>
+            </div>
           </div>
 
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <span class="text-xs font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Ref: HRD/PFL/125/2023</span>
-            <h3 class="text-base font-bold text-[#4161eb] mt-2">Pakarab Fertilizers Limited (Fatima Group)</h3>
-            <p class="text-xs text-gray-500 mb-3">Chemical Engineering Intern | Multan [Jun 2023 – Jul 2023]</p>
-            <p class="text-xs text-gray-700 leading-relaxed">
-              Attached to the Production / Calcium Ammonium Nitrate (CAN) Department. Tracked continuous exothermic neutralization reactors, falling film evaporation systems, and 70-meter natural draft prilling tower operations. Logged material balances and verified prill hardness and moisture standards (<0.5 wt%).
-            </p>
+          <!-- Pak Arab Entry -->
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Ref: HRD/PFL/125/2023</span>
+              <h3 class="text-base font-bold text-[#4161eb] mt-2">Pakarab Fertilizers Limited (Fatima Group)</h3>
+              <p class="text-xs text-gray-500 mb-3">Chemical Engineering Intern | Multan [Jun 2023 – Jul 2023]</p>
+              <div class="mb-4 overflow-hidden rounded border border-gray-200">
+                <img src="Pak arab experience letter_page-0001.jpg" alt="Fatima Fertilizer Letter" class="w-full h-44 object-cover object-top hover:scale-105 transition" onerror="this.style.display='none'">
+              </div>
+              <p class="text-xs text-gray-700 leading-relaxed">
+                Attached to the Production / Calcium Ammonium Nitrate (CAN) Department. Tracked continuous exothermic neutralization reactors, falling film evaporation systems, and 70-meter natural draft prilling tower operations. Logged material balances and verified prill hardness and moisture standards (<0.5 wt%).
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+              <span class="text-gray-500"><i class="fa fa-file-alt mr-1 text-[#4161eb]"></i> Official Letter Attached</span>
+              <a href="Pak arab experience letter_page-0001.jpg" target="_blank" class="text-[#4161eb] font-bold hover:underline">View Full Letter &rarr;</a>
+            </div>
           </div>
         </div>
       </section>
     </div>
 
-    <!-- CERTIFICATIONS TAB -->
+    <!-- 4. CERTIFICATIONS TAB -->
     <div id="tab-certifications" class="tab-content hidden">
       <section class="max-w-5xl mx-auto py-12 px-4">
         <h2 class="text-2xl font-bold text-gray-900 mb-2">PROFESSIONAL CERTIFICATIONS & LICENSES</h2>
         <p class="text-xs text-gray-500 mb-8 uppercase tracking-widest">Statutory Licensing, International Safety Accreditations & Official Language Verification</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex space-x-4">
-            <div class="text-[#4161eb] text-3xl pt-1"><i class="fa fa-shield-alt"></i></div>
-            <div class="text-xs text-gray-700">
-              <h4 class="font-bold text-sm text-gray-900">NEBOSH International General Certificate</h4>
-              <p class="text-blue-600 font-semibold mb-1">NEBOSH, UK | SQA Ref: R630 04 (09 Oct 2025)</p>
-              <p class="text-gray-600 leading-relaxed">Covers workplace health and safety management systems (ISO 45001), process hazard identification, explosive atmosphere containment, fire protection, and risk assessment.</p>
+          <!-- NEBOSH -->
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-blue-600 uppercase">UK Safety Accreditation</span>
+              <h4 class="font-bold text-base text-gray-900 mt-1">NEBOSH International General Certificate</h4>
+              <p class="text-xs text-blue-600 font-semibold mb-2">SQA Ref: R630 04 | Awarded: 09 October 2025</p>
+              <p class="text-xs text-gray-600 leading-relaxed mb-4">
+                Covers workplace health and safety management systems (ISO 45001), process hazard identification, explosive atmosphere containment, fire protection, and industrial risk assessment.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+              <span class="text-gray-500"><i class="fa fa-file-pdf mr-1 text-red-500"></i> Nebosh Certificate Jahanzaib.pdf</span>
+              <a href="Nebosh Certificate Jahanzaib.pdf" target="_blank" class="text-[#4161eb] font-bold hover:underline">View Official PDF &rarr;</a>
             </div>
           </div>
 
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex space-x-4">
-            <div class="text-[#4161eb] text-3xl pt-1"><i class="fa fa-id-badge"></i></div>
-            <div class="text-xs text-gray-700">
-              <h4 class="font-bold text-sm text-gray-900">Registered Professional Engineer (Chemical)</h4>
-              <p class="text-blue-600 font-semibold mb-1">Pakistan Engineering Council | Reg: CHEM/025240</p>
-              <p class="text-gray-600 leading-relaxed">Statutory national license recognizing full professional qualification to practice chemical engineering across Pakistan (Active through 31-Dec-2027).</p>
+          <!-- IOSH -->
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-blue-600 uppercase">UK Safety Credential</span>
+              <h4 class="font-bold text-base text-gray-900 mt-1">IOSH Managing Safely Certification</h4>
+              <p class="text-xs text-blue-600 font-semibold mb-2">Cert: 70061836-01-M34A | Issued: 11 March 2025</p>
+              <div class="mb-3 overflow-hidden rounded border border-gray-200">
+                <img src="Muhammad Jahanzaib Iqbal - IOSH Managing Safely - Certificate - raeesjahanzaibiqbal123gmail.com_page-0001.jpg" alt="IOSH Certificate" class="w-full h-36 object-cover object-top" onerror="this.style.display='none'">
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed mb-2">
+                Institution of Occupational Safety & Health (UK), Ibrahim Technical Training Institute (Approved Centre: 5118). Proactive risk assessment and safety auditing.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+              <span class="text-gray-500"><i class="fa fa-check-circle mr-1 text-green-500"></i> SmartVerify QR Enabled</span>
+              <a href="Muhammad Jahanzaib Iqbal - IOSH Managing Safely - Certificate - raeesjahanzaibiqbal123gmail.com_page-0001.jpg" target="_blank" class="text-[#4161eb] font-bold hover:underline">View Certificate &rarr;</a>
             </div>
           </div>
 
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex space-x-4">
-            <div class="text-[#4161eb] text-3xl pt-1"><i class="fa fa-check-double"></i></div>
-            <div class="text-xs text-gray-700">
-              <h4 class="font-bold text-sm text-gray-900">IOSH Managing Safely Certification</h4>
-              <p class="text-blue-600 font-semibold mb-1">Institution of Occupational Safety & Health, UK | Cert: 70061836-01-M34A</p>
-              <p class="text-gray-600 leading-relaxed">Issued via Ibrahim Technical Training Institute (Approved Centre: 5118) on 11 March 2025. Proactive risk assessment and safety auditing.</p>
+          <!-- PEC Card -->
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-blue-600 uppercase">National Statutory License</span>
+              <h4 class="font-bold text-base text-gray-900 mt-1">Registered Chemical Engineer (PEC)</h4>
+              <p class="text-xs text-blue-600 font-semibold mb-2">Reg: CHEM/025240 | Valid Thru: 31-Dec-2027</p>
+              <div class="mb-3 overflow-hidden rounded border border-gray-200">
+                <img src="PEC Card blurred.png" alt="PEC Registration Card" class="w-full h-36 object-contain bg-slate-50 p-2" onerror="this.style.display='none'">
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed mb-2">
+                Official professional engineering license issued by Pakistan Engineering Council conferring title of Registered Engineer (Chemical).
+              </p>
+            </div>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+              <span class="text-gray-500"><i class="fa fa-qrcode mr-1 text-[#4161eb]"></i> LEN256 QR Verified</span>
+              <a href="PEC Card blurred.png" target="_blank" class="text-[#4161eb] font-bold hover:underline">View PEC Card &rarr;</a>
             </div>
           </div>
 
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex space-x-4">
-            <div class="text-[#4161eb] text-3xl pt-1"><i class="fa fa-language"></i></div>
-            <div class="text-xs text-gray-700">
-              <h4 class="font-bold text-sm text-gray-900">English Language Proficiency Certificate</h4>
-              <p class="text-blue-600 font-semibold mb-1">Department of Humanities, UET Lahore | Ref: HMS/ELC/000454</p>
-              <p class="text-gray-600 leading-relaxed">Official institutional certificate certifying that English was the sole medium of admission, instruction, and examination throughout the B.Sc. program.</p>
+          <!-- English Proficiency -->
+          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-blue-600 uppercase">Language Verification</span>
+              <h4 class="font-bold text-base text-gray-900 mt-1">English Language Proficiency Certificate</h4>
+              <p class="text-xs text-blue-600 font-semibold mb-2">UET Lahore | Ref: HMS/ELC/000454 (08-04-2026)</p>
+              <p class="text-xs text-gray-600 leading-relaxed mb-4">
+                Official institutional certificate issued by Department of Humanities, Social Sciences & Modern Languages confirming English as the sole medium of admission, instruction, and examination throughout the 4-year degree.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+              <span class="text-gray-500"><i class="fa fa-file-pdf mr-1 text-red-500"></i> EnglishProficiencyCertificate.pdf</span>
+              <a href="EnglishProficiencyCertificate.pdf" target="_blank" class="text-[#4161eb] font-bold hover:underline">View Official PDF &rarr;</a>
             </div>
           </div>
         </div>
       </section>
     </div>
 
-    <!-- AWARDS TAB -->
+    <!-- 5. AWARDS TAB -->
     <div id="tab-awards" class="tab-content hidden">
       <section class="max-w-5xl mx-auto py-12 px-4">
         <h2 class="text-2xl font-bold text-gray-900 mb-2">HONOURS AND AWARDS</h2>
         <p class="text-xs text-gray-500 mb-8 uppercase tracking-widest">Academic Degrees, National Scholarships & Board Distinctions</p>
 
-        <div class="space-y-4">
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex justify-between items-center">
-            <div>
-              <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded uppercase">Undergraduate Degree</span>
-              <h3 class="text-sm font-bold text-gray-900 mt-1">B.Sc. Chemical Engineering (Honours Distinction)</h3>
-              <p class="text-xs text-gray-500">UET Lahore | Serial No: 2307510 | CGPA: 3.364 / 4.00 (Attested by HEC & MOFA)</p>
+        <div class="space-y-6">
+          <!-- Degree Card -->
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm flex flex-col md:flex-row gap-6">
+            <div class="md:w-1/3 flex-shrink-0">
+              <img src="Degree UET.jpeg" alt="UET Degree" class="w-full h-52 object-contain bg-slate-50 p-2 rounded border border-gray-200" onerror="this.style.display='none'">
             </div>
-            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded border border-blue-200">First Class</span>
+            <div class="md:w-2/3 flex flex-col justify-between">
+              <div>
+                <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded uppercase">Undergraduate Degree</span>
+                <h3 class="text-base font-bold text-gray-900 mt-1">B.Sc. Chemical Engineering (Honours Distinction)</h3>
+                <p class="text-xs text-gray-500 mb-2">UET Lahore | Serial No: 2307510 | CGPA: 3.364 / 4.00</p>
+                <p class="text-xs text-gray-700 leading-relaxed mb-3">
+                  Completed all degree requirements in August 2025. Official academic transcript attested and verified by both the Higher Education Commission (HEC) and the Ministry of Foreign Affairs (MOFA).
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100 flex flex-wrap gap-4 text-xs">
+                <a href="Degree UET.jpeg" target="_blank" class="text-[#4161eb] font-bold hover:underline"><i class="fa fa-image mr-1"></i> View Degree Scan</a>
+                <a href="Muhammad_Jahanzaib_Iqbal_Transcripts.pdf" target="_blank" class="text-[#4161eb] font-bold hover:underline"><i class="fa fa-file-pdf mr-1 text-red-500"></i> View Attested Transcript (PDF)</a>
+              </div>
+            </div>
           </div>
 
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex justify-between items-center">
-            <div>
-              <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded uppercase">Government Merit Scholarship</span>
-              <h3 class="text-sm font-bold text-gray-900 mt-1">HEC & UET Undergraduate Merit Scholarship</h3>
-              <p class="text-xs text-gray-500">Conferred by Higher Education Commission across 2nd, 3rd, and 4th academic years based on top percentile CGPA standing.</p>
+          <!-- F.Sc Certificate Card -->
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm flex flex-col md:flex-row gap-6">
+            <div class="md:w-1/3 flex-shrink-0">
+              <img src="FSC Certificate.jpg" alt="FSc Certificate" class="w-full h-52 object-contain bg-slate-50 p-2 rounded border border-gray-200" onerror="this.style.display='none'">
             </div>
-            <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded border border-amber-200">Merit Scholar</span>
-          </div>
-
-          <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex justify-between items-center">
-            <div>
-              <span class="text-xs bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded uppercase">Pre-Engineering Distinction</span>
-              <h3 class="text-sm font-bold text-gray-900 mt-1">BISE Multan Higher Secondary Distinction (Grade A+)</h3>
-              <p class="text-xs text-gray-500">City College of Science & Commerce | Roll No: 544235 | 960 / 1100 Marks (Physics: 183/200 A+, Math: 166/200, English: 178/200)</p>
+            <div class="md:w-2/3 flex flex-col justify-between">
+              <div>
+                <span class="text-xs bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded uppercase">Board Distinction</span>
+                <h3 class="text-base font-bold text-gray-900 mt-1">BISE Multan Higher Secondary Distinction (Grade A+)</h3>
+                <p class="text-xs text-gray-500 mb-2">City College of Science & Commerce | Roll: 544235 | Marks: 960 / 1100</p>
+                <p class="text-xs text-gray-700 leading-relaxed mb-3">
+                  Physics: 183/200 (91.5% A+), Mathematics: 166/200, Chemistry: 165/200, English: 178/200 (89%). Conferred under Board of Intermediate & Secondary Education, Multan.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100 text-xs">
+                <a href="FSC Certificate.jpg" target="_blank" class="text-[#4161eb] font-bold hover:underline"><i class="fa fa-image mr-1"></i> View F.Sc Certificate Scan</a>
+              </div>
             </div>
-            <span class="text-xs font-bold text-green-600 bg-green-50 px-3 py-1 rounded border border-green-200">Grade A+</span>
           </div>
         </div>
       </section>
     </div>
 
-    <!-- VOLUNTEERING TAB -->
+    <!-- 6. VOLUNTEERING TAB -->
     <div id="tab-volunteering" class="tab-content hidden">
       <section class="max-w-5xl mx-auto py-12 px-4">
-        <h2 class="text-2xl font-bold text-gray-900 mb-2">VOLUNTEERING & COMMUNITY SERVICE</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">VOLUNTEERING & COMMUNITY LEADERSHIP</h2>
         <p class="text-xs text-gray-500 mb-8 uppercase tracking-widest">Campus Modernization, Healthcare Outreach & Peer Academic Tutoring</p>
+
+        <div class="mb-8 rounded-lg overflow-hidden border border-gray-200 shadow-sm">
+          <img src="IMG_1685~2.jpg" alt="UET Chemical Engineering Graduating Cohort" class="w-full h-64 sm:h-80 object-cover" onerror="this.style.display='none'">
+          <div class="p-3 bg-white text-xs text-gray-500 text-center">
+            Graduating Cohort outside the Faculty of Chemical Engineering and Technology Building, UET Lahore
+          </div>
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
@@ -298,7 +386,62 @@
       </section>
     </div>
 
-    <!-- CONTACT TAB -->
+    <!-- 7. PLANT GALLERY TAB -->
+    <div id="tab-gallery" class="tab-content hidden">
+      <section class="max-w-6xl mx-auto py-12 px-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">FIELDWORK & PLANT GALLERY</h2>
+        <p class="text-xs text-gray-500 mb-8 uppercase tracking-widest">Photographic Evidence of Frontline Industrial Processing & Materials Testing Labs</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Photo 1 -->
+          <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+            <div class="h-52 bg-slate-100 rounded mb-3 overflow-hidden">
+              <img src="IMG_20240709_210618.jpg" alt="Processing Deck" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-xs text-gray-400\'><i class=\'fa fa-industry fa-3x mb-2\'></i><p>OGDCL Processing Deck Photo</p></div>'">
+            </div>
+            <h4 class="font-bold text-xs text-gray-800">OGDCL Processing Deck</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Engr. Jahanzaib holding hardhat & technical logbook during sour gas sweetening column inspections.</p>
+          </div>
+
+          <!-- Photo 2 -->
+          <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+            <div class="h-52 bg-slate-100 rounded mb-3 overflow-hidden">
+              <img src="IMG-20240729-WA0068.jpg" alt="Battery Limits" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-xs text-gray-400\'><i class=\'fa fa-cogs fa-3x mb-2\'></i><p>Gas Plant Separators Photo</p></div>'">
+            </div>
+            <h4 class="font-bold text-xs text-gray-800">Plant Separators & Manifolds</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Walkthrough inspection at the hydrocarbon battery limits past horizontal separation vessels and Claus units.</p>
+          </div>
+
+          <!-- Photo 3 -->
+          <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+            <div class="h-52 bg-slate-100 rounded mb-3 overflow-hidden">
+              <img src="IMG_20240709_083608.jpg" alt="Operations Crew" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-xs text-gray-400\'><i class=\'fa fa-hard-hat fa-3x mb-2\'></i><p>Operations Engineering Crew</p></div>'">
+            </div>
+            <h4 class="font-bold text-xs text-gray-800">Operations Engineering Crew</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Field attachment team in mandatory PPE during gas plant turbomachinery and compressor loop assessments.</p>
+          </div>
+
+          <!-- Photo 4 -->
+          <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+            <div class="h-52 bg-slate-100 rounded mb-3 overflow-hidden">
+              <img src="Snapchat-791951151.jpg" alt="Research Lab" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-xs text-gray-400\'><i class=\'fa fa-flask fa-3x mb-2\'></i><p>UET Materials Lab Photo</p></div>'">
+            </div>
+            <h4 class="font-bold text-xs text-gray-800">UET Materials Research Suite</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Undergraduate research cohort in laboratory coats during chemical dechroming and biocomposite hot pressing.</p>
+          </div>
+
+          <!-- Photo 5 -->
+          <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm md:col-span-2">
+            <div class="h-52 bg-slate-100 rounded mb-3 overflow-hidden">
+              <img src="IMG_1685~2.jpg" alt="UET Chemical Engineering" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-xs text-gray-400\'><i class=\'fa fa-university fa-3x mb-2\'></i><p>UET Chemical Engineering Cohort Photo</p></div>'">
+            </div>
+            <h4 class="font-bold text-xs text-gray-800">Department of Chemical Engineering & Technology</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Graduating chemical engineering cohort in front of the Faculty Building at UET Lahore New Campus.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 8. CONTACT TAB -->
     <div id="tab-contact" class="tab-content hidden">
       <section class="max-w-5xl mx-auto py-12 px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -314,7 +457,7 @@
               <p><strong class="text-gray-900">LinkedIn Profile:</strong> linkedin.com/in/muhammad-jahanzaib-iqbal</p>
             </div>
             <div class="mt-6 bg-blue-50 p-4 rounded border border-blue-100 text-xs text-gray-600">
-              <p class="font-bold text-gray-800 mb-1"><i class="fa fa-file-pdf mr-1 text-[#4161eb]"></i> Verified Documents</p>
+              <p class="font-bold text-gray-800 mb-1"><i class="fa fa-file-pdf mr-1 text-[#4161eb]"></i> Verified Documents Attached</p>
               <p>Attested degree, official transcripts (HEC/MOFA), NEBOSH/IOSH certificates, and industrial letters available upon request.</p>
             </div>
           </div>
@@ -349,6 +492,7 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="bg-[#eef2ff] border-t border-blue-100 py-8 px-4 text-center">
     <h4 class="text-xl font-serif italic text-gray-900">I'd love to hear from you.</h4>
     <p class="text-xs text-gray-600 mt-1">mjahanzaib.inbox@gmail.com | (+92) 308 8617661</p>
@@ -377,7 +521,7 @@
 
     function handleContact(e) {
       e.preventDefault();
-      alert("Message received! Your inquiry has been routed to Engr. Muhammad Jahanzaib Iqbal.");
+      alert("Thank you! Your message has been received.");
       e.target.reset();
     }
   </script>
